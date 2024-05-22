@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "PoetsenOne";
+	src: url("../font/eot/PoetsenOne-Regular.eot");
+	src: local("PoetsenOne-Regular"),
+		url("../font/eot/PoetsenOne-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../font/woff2/PoetsenOne-Regular.woff2") format("woff2"),
+		url("../font/woff/PoetsenOne-Regular.woff") format("woff"),
+		url("../font/ttf/PoetsenOne-Regular.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: PoetsenOne;
+}
+
+svg.fa-chevron-down {
+	transition-duration: 400ms;
+}
+
+.pr-5 {
+	padding-right: 1.25rem;
+}
+
+.animate-rotate-up {
+	animation: rotate_up 300ms cubic-bezier(0, 0, 0.2, 1) 1;
+}
+
+.animate-rotate-down {
+	animation: rotate_down 300ms cubic-bezier(0, 0, 0.2, 1) 1;
+}
+
+@keyframes rotate_down {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes rotate_up {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
